@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-int const DEBUG = 1;
+int const DEBUG = 0;
 char *answer;
 char *key;
 char *searchID;
