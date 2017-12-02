@@ -1,4 +1,5 @@
-#include "stringProcessing.h"
+#include "treeStringProcessing.h"
+
 char *getJSON(char *jsonPath)
 {
 	long size;
@@ -26,6 +27,7 @@ char **parseRequest(char *request)
 	}
 	return requestedParts;
 }
+
 int countParts(char *request)
 {
 	int countL = 0, countR = 0, i = 0;
@@ -41,15 +43,43 @@ int countParts(char *request)
 		return -1;
 	return countL;
 }
-char *parseJSON(char *request, char *jsonPath)
+node *parseJSON(char *jsonPath)
 {
-	char *jsonString;
+	return buildTree(getJSON(jsonPath));
+}
+node *findNode(node* root, char* request)
+{
 	char **requestedParts;
 	int requestedPartsCount;
+	if (request == "*")
+		return root;
 	requestedPartsCount = countParts(request);
 	if (requestedPartsCount == -1)
-		return "Syntax error";
+		return NULL;
 	requestedParts = parseRequest(request);
-	jsonString = getJSON(jsonPath);
-	return parseString(jsonString, requestedParts, requestedPartsCount);
+	currentNode = root;
+	for (int partIt = 0; partIt < requestedPartsCount; partIt++)
+	{
+		currentNode = currentNode->child;
+		while (strcmp(currentNode->key, requestedParts[partIt]) != 0)
+		{
+			currentNode = currentNode->next;
+			if (currentNode == NULL)
+				return NULL;
+		}
+	}
+	return currentNode;
+}
+char *parseTree(node* node)
+{
+	if (node != NULL)
+	{
+		answer = (char*)calloc(1, sizeof(char) * ELEMENT_SIZE);
+		printElementContent(node, answer, 1);
+		if (node->child != NULL)
+			printNode(node->child, answer);
+		printEnding(node, answer);
+		return answer;
+	}
+	else return NULL;
 }
