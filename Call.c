@@ -1,22 +1,35 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include <stdlib.h>
 #include <stdio.h>
-#include "JSONparser.h"
+#include "jsonParser.h"
 int main() {
-
-	char request[256];
-	node* json;
+	node* jsonTree;
 	node* answerTree;
-	char *answer;
-	char jsonPath[] = "input.json";
-	scanf("%s", request);
-
-	json = parseJSON(jsonPath);
-	answerTree = findNode(json, request);
-	answer = parseTree(answerTree);
-	printf("%s", answer);
-
-	freeNode(json);
-	free(answer);
-	scanf("%s", &request);
+	int size;
+	int jsonStatus, answerStatus;
+	char jsonPath[1000];
+	scanf("%s", jsonPath);
+	jsonStatus = parseJSON(jsonPath, &jsonTree, &size);
+	if (jsonStatus)
+	{
+		printf("File was not found");
+	}
+	else {
+		char* answer = (char*)malloc(sizeof(char) * size);
+		char* request = (char*)malloc(sizeof(char) * size);
+		strcpy(answer, "");
+		scanf("%s", request);
+		answerStatus = findNode(jsonTree, &answerTree, request, size);
+		if (answerStatus)
+			printf("Not found");
+		else {
+			parseTree(answerTree, &answer);
+			printf("%s", answer);
+		}
+		freeNode(jsonTree);
+		free(answer);
+		free(request);
+	}
+	scanf("%s", jsonPath);
 	return 0;
 }
