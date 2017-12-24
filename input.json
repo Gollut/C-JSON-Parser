@@ -1,52 +1,272 @@
-[{
-  "created_at": "Thu Jun 22 21:00:00 +0000 2017",
-  "id": 877994604561387500,
-  "id_str": "877994604561387520",
-  "text": "Creating a Grocery List Manager Using Angular, Part 1: Add &amp; Display Items https://t.co/xFox78juL1 #Angular",
-  "truncated": false,
-  "entities": {
-    "hashtags": [{
-      "text": "Angular",
-      "indices": [103, 111]
-    }],
-    "symbols": [],
-    "user_mentions": [],
-    "urls": [{
-      "url": "https://t.co/xFox78juL1",
-      "expanded_url": "http://buff.ly/2sr60pf",
-      "display_url": "buff.ly/2sr60pf",
-      "indices": [79, 102]
-    }]
-  },
-  "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
-  "user": {
-    "id": 772682964,
-    "id_str": "772682964",
-    "name": "SitePoint JavaScript",
-    "screen_name": "SitePointJS",
-    "location": "Melbourne, Australia",
-    "description": "Keep up with JavaScript [][]][]][] tutorials, tips, tricks and articles at SitePoint.",
-    "url": "http://t.co/cCH13gqeUK",
-    "entities": {
-      "url": {
-        "urls": [{
-          "url": "http://t.co/cCH13gqeUK",
-          "expanded_url": "http://sitepoint.com/javascript",
-          "display_url": "sitepoint.com/javascript",
-          "indices": [0, 22]
-        }]
+[
+  {
+    "_id": "5a3fb4a1c3b779f8516a79cb",
+    "index": 0,
+    "guid": "8f01caa6-0bb1-484b-87fa-1dcefe5d2133",
+    "isActive": true,
+    "balance": "$1,504.20",
+    "picture": "http://placehold.it/32x32",
+    "age": 29,
+    "eyeColor": "brown",
+    "name": "Chasity Alford",
+    "gender": "female",
+    "company": "CABLAM",
+    "email": "chasityalford@cablam.com",
+    "phone": "+1 (969) 456-3205",
+    "address": "670 Cyrus Avenue, Waterview, Colorado, 3948",
+    "about": "Esse velit incididunt aliqua sint eu sunt sunt in. Non laboris ad minim minim amet irure. Ex est exercitation incididunt proident enim irure fugiat. Ut dolor sit reprehenderit consectetur dolor dolore veniam consectetur dolor occaecat. Aliqua sint sit nostrud reprehenderit eiusmod officia. Nostrud commodo eu dolor quis.\r\n",
+    "registered": "2015-12-20T08:15:21 -03:00",
+    "latitude": -38.806147,
+    "longitude": -133.278999,
+    "tags": [
+      "labore",
+      "cupidatat",
+      "dolor",
+      "et",
+      "velit",
+      "anim",
+      "non"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Doris Johns"
       },
-      "description": {
-        "urls": []
+      {
+        "id": 1,
+        "name": "Keller Sanchez"
+      },
+      {
+        "id": 2,
+        "name": "Bailey Kirkland"
       }
-    },
-    "protected": false,
-    "followers_count": 2145,
-    "friends_count": 18,
-    "listed_count": 328,
-    "created_at": "Wed Aug 22 02:06:33 +0000 2012",
-    "favourites_count": 57,
-    "utc_offset": 43200,
-    "time_zone": "Wellington",
+    ],
+    "greeting": "Hello, Chasity Alford! You have 3 unread messages.",
+    "favoriteFruit": "strawberry"
   },
-}]
+  {
+    "_id": "5a3fb4a12de3cb739c280e38",
+    "index": 1,
+    "guid": "1e467793-1e3c-4bc1-8ead-dd0b82125f88",
+    "isActive": true,
+    "balance": "$1,560.98",
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "eyeColor": "blue",
+    "name": "Moss Gould",
+    "gender": "male",
+    "company": "BITREX",
+    "email": "mossgould@bitrex.com",
+    "phone": "+1 (994) 477-2656",
+    "address": "211 Orient Avenue, Smeltertown, Missouri, 3045",
+    "about": "Ut Lorem sunt nulla ullamco in officia voluptate. Ex voluptate occaecat Lorem ea anim occaecat quis ad ipsum do. Ullamco minim eiusmod magna proident laborum ullamco culpa ut excepteur do anim labore. Consequat ut nisi irure magna occaecat in dolor culpa.\r\n",
+    "registered": "2016-11-14T07:54:54 -03:00",
+    "latitude": -20.242993,
+    "longitude": 164.195256,
+    "tags": [
+      "incididunt",
+      "sint",
+      "excepteur",
+      "veniam",
+      "reprehenderit",
+      "et",
+      "magna"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Mcfadden Morris"
+      },
+      {
+        "id": 1,
+        "name": "Shannon Mathews"
+      },
+      {
+        "id": 2,
+        "name": "Juliana Sanford"
+      }
+    ],
+    "greeting": "Hello, Moss Gould! You have 3 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5a3fb4a1e78012a518b1a4a1",
+    "index": 2,
+    "guid": "4c1b88c6-f2ff-438d-b6a1-6600ee2e9860",
+    "isActive": false,
+    "balance": "$2,963.02",
+    "picture": "http://placehold.it/32x32",
+    "age": 25,
+    "eyeColor": "green",
+    "name": "Blanche Dawson",
+    "gender": "female",
+    "company": "INSOURCE",
+    "email": "blanchedawson@insource.com",
+    "phone": "+1 (886) 435-3417",
+    "address": "799 Classon Avenue, Marne, Massachusetts, 9845",
+    "about": "Labore reprehenderit consequat do adipisicing aliqua. Reprehenderit aliqua laboris aute deserunt. Eiusmod magna qui excepteur consequat. Consequat laboris eiusmod culpa incididunt excepteur dolore aliquip voluptate excepteur aute dolor ipsum duis commodo. Culpa commodo quis laboris ut enim cupidatat. Nulla minim duis commodo anim ad velit occaecat commodo nulla sint eiusmod tempor. Irure tempor magna nostrud nostrud et velit id labore amet culpa exercitation cillum proident consectetur.\r\n",
+    "registered": "2016-08-05T04:51:30 -03:00",
+    "latitude": -21.933707,
+    "longitude": 22.08834,
+    "tags": [
+      "sint",
+      "ullamco",
+      "sunt",
+      "elit",
+      "aliqua",
+      "veniam",
+      "sunt"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Roxie Castillo"
+      },
+      {
+        "id": 1,
+        "name": "Kim York"
+      },
+      {
+        "id": 2,
+        "name": "Bishop Delgado"
+      }
+    ],
+    "greeting": "Hello, Blanche Dawson! You have 7 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5a3fb4a14bc2cf43c06d77ed",
+    "index": 3,
+    "guid": "09661634-9d5d-4b23-8f0c-ac46e11dab72",
+    "isActive": true,
+    "balance": "$3,374.83",
+    "picture": "http://placehold.it/32x32",
+    "age": 29,
+    "eyeColor": "blue",
+    "name": "Avis Hunter",
+    "gender": "female",
+    "company": "CODACT",
+    "email": "avishunter@codact.com",
+    "phone": "+1 (899) 487-2948",
+    "address": "331 Menahan Street, Bendon, Vermont, 8562",
+    "about": "Irure quis labore magna enim sit adipisicing do Lorem duis eiusmod est. Quis eiusmod irure laborum magna magna irure deserunt. Voluptate fugiat eiusmod anim laborum tempor ipsum cupidatat adipisicing labore ipsum. Id do quis labore laboris consectetur mollit qui excepteur. Exercitation tempor sint laboris enim veniam aliqua fugiat dolor quis eu sit consectetur elit officia. Magna eiusmod duis irure eu occaecat pariatur dolore. Esse ipsum in mollit deserunt Lorem quis non esse amet dolor pariatur laboris.\r\n",
+    "registered": "2016-05-20T08:26:06 -03:00",
+    "latitude": -59.248181,
+    "longitude": 89.892052,
+    "tags": [
+      "et",
+      "dolore",
+      "ad",
+      "officia",
+      "magna",
+      "est",
+      "eu"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Skinner Simon"
+      },
+      {
+        "id": 1,
+        "name": "Phyllis Melton"
+      },
+      {
+        "id": 2,
+        "name": "Lorraine Barton"
+      }
+    ],
+    "greeting": "Hello, Avis Hunter! You have 10 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5a3fb4a1c66344976460d82c",
+    "index": 4,
+    "guid": "2387fd2d-b2bd-4a26-a8c5-cb7beda74787",
+    "isActive": false,
+    "balance": "$3,332.30",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Cheryl Nieves",
+    "gender": "female",
+    "company": "ENOMEN",
+    "email": "cherylnieves@enomen.com",
+    "phone": "+1 (964) 400-3029",
+    "address": "284 Oceanview Avenue, Lumberton, Wisconsin, 5197",
+    "about": "Sint eiusmod qui Lorem minim ipsum sit commodo culpa elit consequat anim. Anim reprehenderit nisi cupidatat ullamco ullamco laboris voluptate cupidatat consectetur. Exercitation fugiat nostrud qui occaecat eu ea ad veniam adipisicing occaecat ipsum cupidatat eu mollit.\r\n",
+    "registered": "2014-03-29T11:24:47 -03:00",
+    "latitude": 78.952343,
+    "longitude": -58.579192,
+    "tags": [
+      "ad",
+      "quis",
+      "exercitation",
+      "elit",
+      "elit",
+      "aute",
+      "officia"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Allison Ochoa"
+      },
+      {
+        "id": 1,
+        "name": "Nina Reynolds"
+      },
+      {
+        "id": 2,
+        "name": "Long Whitley"
+      }
+    ],
+    "greeting": "Hello, Cheryl Nieves! You have 10 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5a3fb4a1518618660b625e04",
+    "index": 5,
+    "guid": "eda1fd39-df02-4704-af84-3a79c04d2e5d",
+    "isActive": false,
+    "balance": "$3,835.07",
+    "picture": "http://placehold.it/32x32",
+    "age": 21,
+    "eyeColor": "brown",
+    "name": "Agnes Galloway",
+    "gender": "female",
+    "company": "OLYMPIX",
+    "email": "agnesgalloway@olympix.com",
+    "phone": "+1 (989) 520-2229",
+    "address": "320 Waldorf Court, Steinhatchee, South Dakota, 837",
+    "about": "Do commodo sit do sint fugiat culpa consectetur cupidatat sint. In ullamco cillum voluptate tempor culpa consequat nostrud. Excepteur sint officia minim et elit. Nisi ea id consequat veniam nisi laborum culpa tempor nisi consequat amet esse amet.\r\n",
+    "registered": "2015-05-18T02:39:36 -03:00",
+    "latitude": -32.032969,
+    "longitude": -118.22978,
+    "tags": [
+      "eiusmod",
+      "mollit",
+      "est",
+      "cupidatat",
+      "aliqua",
+      "excepteur",
+      "velit"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Iva Myers"
+      },
+      {
+        "id": 1,
+        "name": "Reid Bentley"
+      },
+      {
+        "id": 2,
+        "name": "Holly Romero"
+      }
+    ],
+    "greeting": "Hello, Agnes Galloway! You have 5 unread messages.",
+    "favoriteFruit": "strawberry"
+  }
+]

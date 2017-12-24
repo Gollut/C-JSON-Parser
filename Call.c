@@ -1,14 +1,21 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "jsonParser.h"
-int main() {
+int main(int argc, char **argv) {
 	node* jsonTree;
 	node* answerTree;
 	int size;
 	int jsonStatus, answerStatus;
 	char jsonPath[1000];
-	scanf("%s", jsonPath);
+	if (argc >= 3 && !strcmp(argv[1], "--input")) {
+		strcpy(jsonPath, argv[2]);
+	}
+	else {
+		printf("Using default input.json sample.\n");
+		strcpy(jsonPath, "input.json");
+	}
 	jsonStatus = parseJSON(jsonPath, &jsonTree, &size);
 	if (jsonStatus)
 	{
@@ -30,6 +37,5 @@ int main() {
 		free(answer);
 		free(request);
 	}
-	scanf("%s", jsonPath);
 	return 0;
 }
