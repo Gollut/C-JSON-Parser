@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "jsonParser.h"
+
 int main(int argc, char **argv) {
 	node* jsonTree;
 	node* answerTree;
@@ -22,20 +23,23 @@ int main(int argc, char **argv) {
 		printf("File was not found");
 	}
 	else {
-		char* answer = (char*)malloc(sizeof(char) * size);
-		char* request = (char*)malloc(sizeof(char) * size);
-		strcpy(answer, "");
-		scanf("%s", request);
-		answerStatus = findNode(jsonTree, &answerTree, request, size);
-		if (answerStatus)
-			printf("Not found");
-		else {
-			parseTree(answerTree, &answer);
-			printf("%s", answer);
+		while (1)
+		{
+			char* answer = (char*)malloc(sizeof(char) * size);
+			char* request = (char*)malloc(sizeof(char) * size);
+			strcpy(answer, "");
+			scanf("%s", request);
+			answerStatus = findNode(jsonTree, &answerTree, request, size);
+			if (answerStatus)
+				printf("Not found");
+			else {
+				parseTree(answerTree, &answer);
+				printf("%s\n", answer);
+			}
+			free(answer);
+			free(request);
 		}
 		freeNode(jsonTree);
-		free(answer);
-		free(request);
 	}
 	return 0;
 }
